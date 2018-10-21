@@ -19,23 +19,17 @@ public:
   {
 
     if (m_LogLevel >= LogLevelError)
-    {
       std::cout << "[ERROR]: " << message << std::endl;
-    }
   }
   void Warn(const char *message)
   {
     if (m_LogLevel >= LogLevelWarning)
-    {
       std::cout << "[WARNDING]: " << message << std::endl;
-    }
   }
   void Info(const char *message)
   {
     if (m_LogLevel >= LogLevelInfo)
-    {
       std::cout << "[INFO]: " << message << std::endl;
-    }
   }
   Log(/* args */);
   ~Log();
