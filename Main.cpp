@@ -24,7 +24,7 @@ public:
   void Warn(const char *message)
   {
     if (m_LogLevel >= LogLevelWarning)
-      std::cout << "[WARNDING]: " << message << std::endl;
+      std::cout << "[WARNING]: " << message << std::endl;
   }
   void Info(const char *message)
   {
@@ -47,7 +47,7 @@ int main()
 {
   Log log;
 
-  log.SetLevel(LogLevelWarning);
+  log.SetLevel(log.LogLevelWarning);
   log.Warn("Hello!");
 
   return 0;
